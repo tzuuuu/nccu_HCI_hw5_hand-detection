@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "checks": [
+    "總筆數為 75，三組各 30/27/18",
+    "無重複 session/trial",
+    "各區域、條件與重複次數完整",
+    "實驗 1 的識別碼與流水號完整",
+    "實驗 2 的識別碼與流水號完整",
+    "實驗 3 的識別碼與流水號完整",
+    "cooldown_seconds 固定",
+    "detection_confidence 固定",
+    "presence_confidence 固定",
+    "tracking_confidence 固定",
+    "mediapipe_version 固定",
+    "timeout_seconds 固定",
+    "同一模型，且與本機模型 SHA256 相符",
+    "實驗一與三 baseline K=6",
+    "實驗一與二為正常光線",
+    "實驗二 Short/Medium/Long 為 K=3/6/10",
+    "指令映射、布林結果與觸發時間一致",
+    "手腕座標落在記錄之觸發區域",
+    "影格計數合理",
+    "起訖時間與 monotonic 觸發時間差異小於 50 ms"
+  ],
+  "total_trials": 75,
+  "sources": [
+    {
+      "path": "results/experiment1_20261106-211554-402383.csv",
+      "sha256": "12a8077ab36424b86f01150a8a0c06c19cba427c3df429f61faa2111f6a67d5d"
+    },
+    {
+      "path": "results/experiment2_20261106-211944-097386.csv",
+      "sha256": "d73ae0c54ef42175a31c7b893fc491380828c414f1f0de05aefff288970e8144"
+    },
+    {
+      "path": "results/experiment3_20261106-212231-247232.csv",
+      "sha256": "52936d666256c036a2ee2c7aab773602a95ea5c6e4c05d90cc5cf6d11ecedc84"
+    }
+  ],
+  "model_sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1",
+  "max_timestamp_discrepancy_ms": 1.2999999999999545
+}
