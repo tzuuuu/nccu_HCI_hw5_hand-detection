@@ -3,4 +3,6 @@ __pycache__/
 .venv/
 venv/
 .DS_Store
-models/*.part
+*.md
+!/README.md
+screenshots/

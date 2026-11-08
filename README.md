@@ -37,11 +37,11 @@ python app.py
 
 辨識使用 MediaPipe Tasks VIDEO 模式，並將 Detection、Presence、Tracking 三個門檻固定為 0.5；可於啟動時用 `--confidence` 設定三者，但正式實驗全程須保持一致。FPS 顯示實際處理速率，K 代表處理影格數，不是固定毫秒。
 
-正式實驗操作步驟見 [DATA_COLLECTION_GUIDE.md](DATA_COLLECTION_GUIDE.md)。文件頁面保留 HW4 的背景減除主題內容作為相同閱讀素材，不代表 HW5 使用背景減除。
+文件頁面保留 HW4 的背景減除主題內容作為相同閱讀素材，不代表 HW5 使用背景減除。
 
 ## 實驗與成果
 
-已完成 75 次正式試驗，三組均為 100% 正確觸發。完整統計、時間分布與限制見 [實驗結果分析](results/analysis/RESULTS_ANALYSIS.md)。執行 `python analyze_experiments.py` 可重建驗證紀錄、摘要與圖表。
+已完成 75 次正式試驗，三組均為 100% 正確觸發。各條件的統計見 [實驗摘要 CSV](results/analysis/summary_metrics.csv)。執行 `python analyze_experiments.py` 可重建驗證紀錄、摘要與圖表。
 
 從 Experiment → Open Experiment Runner 開啟工具：實驗一 30 次、實驗二 27 次、實驗三 18 次。每筆結果完成後立即寫入 `results/`；Pilot 獨立寫入 `pilot-data/`。不會產生模擬的正式結果。
 
